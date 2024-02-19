@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
     "target": "ES2019",
     "lib": ["ESNext"],
-    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "esModuleInterop": true,
-    "strictNullChecks": true,
-    "moduleResolution": "Node"
+    "strict": true,
+    "strictNullChecks": true
   },
   "include": [
     "src",
