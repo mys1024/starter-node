@@ -1,6 +1,6 @@
 # starter-node-package
 
-A starter template for Node.js package.
+A Node.js package starter template.
 
 ## Features
 
@@ -12,6 +12,13 @@ A starter template for Node.js package.
 
 - [ESLint](https://eslint.org/)
 
+## Checklist
+
+When you use this template, try follow the checklist to update your info and config properly:
+
+- [ ] Globally replace `mys1024` with your name.
+- [ ] Globally replace `starter-node-package` with your package name.
+
 ## License
 
-MIT
+[MIT](./LICENSE) License &copy; 2024-PRESENT mys1024

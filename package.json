@@ -1,9 +1,9 @@
 {
   "name": "starter-node-package",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.15.3",
-  "description": "A starter template for Node.js package.",
+  "description": "A Node.js package starter template.",
   "author": "mys1024",
   "license": "MIT",
   "homepage": "https://github.com/mys1024/starter-node-package#readme",
