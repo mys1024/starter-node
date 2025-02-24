@@ -1,13 +1,8 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll": "explicit"
   },
-  "cSpell.words": [
-    "antfu",
-    "changelogithub",
-    "pnpm",
-    "pnpx",
-    "taze",
-    "tsup"
-  ]
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": ["antfu", "bumpp", "changelogithub", "pnpm", "pnpx", "taze", "tsup"]
 }
