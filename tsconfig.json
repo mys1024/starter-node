@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2019",
+    "target": "ES2021",
     "lib": ["ESNext"],
     "module": "ESNext",
     "moduleResolution": "Node",
@@ -8,12 +8,6 @@
     "strict": true,
     "strictNullChecks": true
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "**/dist",
-    "**/node_modules",
-    "**/coverage"
-  ]
+  "include": ["src"],
+  "exclude": ["**/dist", "**/node_modules", "**/coverage"]
 }

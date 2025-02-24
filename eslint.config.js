@@ -8,11 +8,7 @@ export default tseslint.config(
   },
   {
     name: 'files-to-ignore',
-    ignores: [
-      '**/dist/**',
-      '**/coverage/**',
-      '**/.pnpm-store/**',
-    ],
+    ignores: ['**/dist/**', '**/coverage/**', '**/.pnpm-store/**'],
   },
   eslint.configs.recommended,
   tseslint.configs.strict,

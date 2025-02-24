@@ -1,5 +1,5 @@
 export function foo() {
-  return 'bar'
+  return 'bar';
 }
 
-console.log(foo())
+console.log(foo());

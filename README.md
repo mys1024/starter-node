@@ -2,16 +2,6 @@
 
 A Node.js package starter template.
 
-## Features
-
-- [pnpm](https://pnpm.io/)
-
-- [Vitest](https://vitest.dev/)
-
-- [tsup](https://tsup.egoist.dev/)
-
-- [ESLint](https://eslint.org/)
-
 ## Checklist
 
 When you use this template, try follow the checklist to update your info and config properly:
