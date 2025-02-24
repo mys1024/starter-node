@@ -1,4 +1,4 @@
-# starter-node-package
+# starter-node
 
 A Node.js package starter template.
 
@@ -17,7 +17,7 @@ A Node.js package starter template.
 When you use this template, try follow the checklist to update your info and config properly:
 
 - [ ] Globally replace `mys1024` with your name.
-- [ ] Globally replace `starter-node-package` with your package name.
+- [ ] Globally replace `starter-node` with your package name.
 
 ## License
 

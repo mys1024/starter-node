@@ -1,15 +1,15 @@
 {
-  "name": "starter-node-package",
+  "name": "starter-node",
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@8.15.3",
   "description": "A Node.js package starter template.",
   "author": "mys1024",
   "license": "MIT",
-  "homepage": "https://github.com/mys1024/starter-node-package#readme",
+  "homepage": "https://github.com/mys1024/starter-node#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mys1024/starter-node-package.git"
+    "url": "https://github.com/mys1024/starter-node.git"
   },
   "keywords": [
     "template"
