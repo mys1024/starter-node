@@ -13,19 +13,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
 
-      - name: Setup Node.js 18
-        uses: actions/setup-node@v3
+      - name: Setup node
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
-          registry-url: 'https://registry.npmjs.org'
+          node-version: 22
           cache: pnpm
 
       - name: Install
@@ -33,6 +30,9 @@ jobs:
 
       - name: Test
         run: pnpm run test
+
+      - name: Check
+        run: pnpm run check
 
       - name: Build
         run: pnpm run build
