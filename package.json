@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsup src/index.ts --dts --format cjs,esm --clean",
+    "build": "tsup src/index.ts --clean --dts --format cjs,esm",
     "test": "vitest",
     "test:cover": "vitest --coverage",
     "check": "run-p check:*",

@@ -35,11 +35,11 @@ jobs:
       - name: Install
         run: pnpm install
 
-      - name: Test
-        run: pnpm run test
-
       - name: Check
         run: pnpm run check
+
+      - name: Test
+        run: pnpm run test
 
       - name: Build
         run: pnpm run build

@@ -1,8 +1,5 @@
 name: Release
 
-permissions:
-  contents: write
-
 on:
   push:
     tags:
@@ -11,6 +8,9 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
 
     steps:
       - name: Checkout
@@ -28,17 +28,17 @@ jobs:
       - name: Install
         run: pnpm install
 
-      - name: Test
-        run: pnpm run test
-
       - name: Check
         run: pnpm run check
+
+      - name: Test
+        run: pnpm run test
 
       - name: Build
         run: pnpm run build
 
       - name: Release
-        run: pnpm publish --no-git-checks
+        run: pnpm publish --no-git-checks --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
