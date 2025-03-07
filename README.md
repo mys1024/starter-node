@@ -17,4 +17,4 @@ When you use this template, try follow the checklist to update your information:
 
 ## License
 
-[MIT](./LICENSE) License &copy; 2024-PRESENT mys1024
+[MIT](./LICENSE) License &copy; 2025-PRESENT mys1024
