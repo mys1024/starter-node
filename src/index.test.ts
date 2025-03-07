@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import { foo } from './index';
+import { greet } from './index';
 
-describe('basic', () => {
-  it('foo', async () => {
-    expect(foo()).toBe('bar');
+describe('greet()', () => {
+  it('hello', async () => {
+    expect(greet()).toBe('Hello, Node.js!');
   });
 });

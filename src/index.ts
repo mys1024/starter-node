@@ -1,5 +1,3 @@
-export function foo() {
-  return 'bar';
+export function greet() {
+  return 'Hello, Node.js!';
 }
-
-console.log(foo());
