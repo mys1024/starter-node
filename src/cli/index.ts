@@ -1,12 +1,15 @@
 #!/usr/bin/env node
 
 import { argv } from 'node:process';
+import { fileURLToPath } from 'node:url';
 import { program } from 'commander';
 import { version } from '../../package.json';
 import { envOptions } from './env';
 import type { CliOptions } from './types';
 
-async function cli() {
+export type { CliOptions };
+
+export async function cli() {
   const options = program
     .name('starter-node')
     .option('--foo <foo>', 'Foo.', envOptions.foo)
@@ -30,4 +33,6 @@ async function cli() {
   console.log(options);
 }
 
-cli();
+if (argv[1] === fileURLToPath(import.meta.url)) {
+  cli();
+}
