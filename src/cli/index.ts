@@ -2,6 +2,7 @@
 
 import { argv } from 'node:process';
 import { fileURLToPath } from 'node:url';
+import { realpath } from 'node:fs/promises';
 import { program } from 'commander';
 import { version } from '../../package.json';
 import { envOptions } from './env';
@@ -33,6 +34,8 @@ export async function cli() {
   console.log(options);
 }
 
-if (argv[1] === fileURLToPath(import.meta.url)) {
-  cli();
-}
+(async () => {
+  if ((await realpath(argv[1])) === fileURLToPath(import.meta.url)) {
+    cli();
+  }
+})();
