@@ -24,8 +24,7 @@
     "dist"
   ],
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "postinstall": "simple-git-hooks",
+    "prepare": "simple-git-hooks",
     "cli": "tsx src/cli/index.ts",
     "cli:watch": "tsx watch src/cli/index.ts",
     "build": "unbuild",
