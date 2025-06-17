@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           registry-url: 'https://registry.npmjs.org'
-          node-version: 22
+          node-version-file: .node-version
           cache: pnpm
 
       - name: Install
@@ -46,6 +46,6 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Changelog
-        run: pnpx changelogithub
+        run: pnpm changelogithub
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
